@@ -1,0 +1,96 @@
+:root{
+    --background: rgb(229, 236, 255);
+    --blue: rgb(0, 3, 153);
+    --text-color: rgb(255, 255, 255);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--background);
+}
+
+.container .header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--blue);
+    color: var(--text-color);
+}
+
+.container .header button{
+    font-family: 'Nunito', sans-serif;
+    padding: 8px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.container .bott{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.container .bott .card{
+    background-color: var(--text-color);
+    padding: 15px;
+    width: 90%;
+    height: fit-content;
+    border-radius: 8px;
+}
+
+.container .bott .card .values{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container .bott .card .values .val1-temp h1{
+    color: brown;
+}
+
+.container .bott .card .values .val1-hum h1{
+    color: rgb(99, 125, 238);
+}
+
+.container .bott .card .values .val1-air h1{
+    color: rgb(161, 173, 228);
+}
+
+
+
+
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx MOBILE xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+@media screen and (max-width: 800px) {
+    .container .bott .card{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .container .bott .card .values{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
